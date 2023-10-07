@@ -13,29 +13,33 @@ body {
   background-color: #fff;
   font-family: Poppins, sans-serif;
 }
-.container {
- background-image: url(https://assets.website-files.com/6465ef4a3ebaf6d1094d9e5b/6466041dee5ad19ad3126185_hero%20circle.png);
- background-position: 100%;
-background-position-x: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    overflow: hidden;
-    position: relative;
-    margin-top: -58px;
-  padding: 65px  72px;
-}
-
 button {
   padding: 14px 24px;
   border-radius: 30px;
 }
-
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
 /* *****************************HEADER  STYLE*/
 .header {
   background-color:;
   position: relative;
   margin: 0 9.6px;
   padding: 10px 0;
+}
+.hero_section{
+    background-image: url(https://assets.website-files.com/6465ef4a3ebaf6d1094d9e5b/6466041dee5ad19ad3126185_hero%20circle.png);
+      background-position: 100%;
+      background-position-x: right;
+     background-repeat: no-repeat;
+     background-size: contain;
+     overflow: hidden;
+     position: relative;
+     margin-top: -56px;
+     padding: 65px  72px;
+      height: 107vh;
 }
 .navigation {
   display: flex;
@@ -96,11 +100,7 @@ button {
   padding: 12px;
   font-size: 46px;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-}
+
 
 /* ***************************** navbar_links */
 .nav_menu {
@@ -195,28 +195,49 @@ button {
   height: 536px;
 }
 
-/* ======DEMO STYLE */
-.demo {
-  margin: 10rem 0;
-  gap: 5rem;
+/* ========== -DEMO STYLE-============*/
+.demo_section {
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+  align-items: center;
+  gap: 6.25rem;
+  margin: 7rem 0;
+  padding: 0px  72px;
 }
-.demo_clip video {
-  height: 450px;
+.demo_component{
+  position: relative;
+  height: 487px;
+  
+}
+.demo_component video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 758px;
+  object-fit: cover;
+  height: 486px;
+  z-index: 10000;
   border-radius: 25px;
   overflow: hidden;
 }
-.demo_content {
-  padding: 60px;
-}
+
+
 .demo_content h1 {
-  font-size: 3.1rem;
+  font-size: 3.5rem;
   letter-spacing: 1px;
-  font-weight: 700;
-  line-height: 1.1;
+  font-weight: 300;
+  line-height: 1.2;
   margin-bottom: 1.1rem;
+
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#000 51%,#d6d6d6 84%,#c7c7c7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Poppins,sans-serif;
+  font-weight: 300;
 }
 .demo_content p {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.52;
 }
 
