@@ -20,7 +20,7 @@ const Home = () => {
           <img src={HomeContent[0].userProfile} alt="" />
           <div className="specialist_info">
             <span>{HomeContent[0].imgdesc1}</span>
-            <a href="#">{HomeContent[0].imgdesc2}</a>
+            <a href="#">Talk with a <strong>specialist</strong></a>
           </div>
         </div>
       </div>

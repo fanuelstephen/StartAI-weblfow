@@ -20,6 +20,9 @@ const HomeContent = [
       title: "Better user satisfaction",
       desc: "Our customer support AI tool is an advanced software solution that helps businesses provide efficient and personalized support to their customers.",
       clip: "/assert/clip.mp4",
+      logo1: "/assert/Snowflake.png",
+      logo3: "assert/InvertDark.svg",
+      logo5: "assert/HitechDark.svg"
     },
   ];
   export { DemoData };

@@ -37,9 +37,9 @@ button {
      background-size: contain;
      overflow: hidden;
      position: relative;
-     margin-top: -56px;
-     padding: 65px  72px;
-      height: 107vh;
+     /* margin-top: -56px;  */
+     padding: 11px  72px;
+      height: 100vh;
 }
 .navigation {
   display: flex;
@@ -185,9 +185,10 @@ button {
   font-size: 14px;
 }
 .specialist_info a {
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: underline;
   cursor: pointer;
+  color: #000;
 }
 
 .home_img img {
@@ -196,6 +197,20 @@ button {
 }
 
 /* ========== -DEMO STYLE-============*/
+.demo_logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding:1.5rem 0;
+}
+.demo_logos p{
+  color: #fff;
+  padding: 30px 40px;
+  margin-right: 2rem;
+
+  font-size: 30px;
+}
 .demo_section {
   display: grid;
   grid-template-columns: 1.75fr 1fr;
@@ -220,8 +235,6 @@ button {
   border-radius: 25px;
   overflow: hidden;
 }
-
-
 .demo_content h1 {
   font-size: 3.5rem;
   letter-spacing: 1px;
@@ -282,5 +295,15 @@ button {
   .home {
     grid-template-columns: 1fr;
     align-items: center;
+  }
+  /* demooooo */
+  .demo_section {
+    grid-template-columns: 1fr;
+  
+  }
+  .demo_component video {
+   
+    top: 10%;
+   
   }
 }
