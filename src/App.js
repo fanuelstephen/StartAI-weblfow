@@ -3,6 +3,9 @@ import "./App.css";
 import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import Demo from "./components/demo/Demo";
+import Integrate from "./components/integrate/Integrate";
+import Minimize from "./components/minimize/Minimize";
+import Business from "./components/business/Business";
 
 
 function App() {
@@ -17,7 +20,10 @@ function App() {
         <Header opneNavigation={opneNavigation} oppenSidebar={oppenSidebar}/>
         <Home/>
       </div>
-        <Demo/>
+      <Demo />
+      <Integrate />
+      <Minimize />
+      <Business/>
     </div>
   );
 }

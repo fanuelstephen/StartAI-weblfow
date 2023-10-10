@@ -39,7 +39,7 @@ button {
      position: relative;
      /* margin-top: -56px;  */
      padding: 11px  72px;
-      height: 100vh;
+      /* height: 100vh; */
 }
 .navigation {
   display: flex;
@@ -197,20 +197,6 @@ button {
 }
 
 /* ========== -DEMO STYLE-============*/
-.demo_logos{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-  padding:1.5rem 0;
-}
-.demo_logos p{
-  color: #fff;
-  padding: 30px 40px;
-  margin-right: 2rem;
-
-  font-size: 30px;
-}
 .demo_section {
   display: grid;
   grid-template-columns: 1.75fr 1fr;
@@ -219,10 +205,23 @@ button {
   margin: 7rem 0;
   padding: 0px  72px;
 }
+
+.demo_logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding:1.5rem 0;
+}
+.demo_logos p{
+  color: #fff;
+  padding: 30px 40px;
+  margin-right: 2rem;
+  font-size: 30px;
+}
 .demo_component{
   position: relative;
   height: 487px;
-  
 }
 .demo_component video {
   position: absolute;
@@ -253,7 +252,127 @@ button {
   font-size: 1.125rem;
   line-height: 1.52;
 }
+/* ================- INTERGRATE SECTION- ============= */
+.section{
+  margin: 7rem 0;
+  padding: 0px  72px;
+}
+.integrate-heading{
+  text-align: center;
+  font-size: 3.5rem;
+  padding-top: 80px;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#000 40%,#6b6b6b 72%,#dfdfdf);
+  -webkit-background-clip: text;
+  font-family: Poppins,sans-serif;
+  font-weight: 300;
+  margin-bottom: 2rem;
 
+}
+.integer-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ column-gap: 12rem;
+ padding: 3rem 0;
+
+}
+.integer-content img{
+  width: 77px;
+  margin-bottom: 1rem;
+}
+.integer-content h5{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#000 40%,#6b6b6b 72%,#dfdfdf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Poppins,sans-serif;
+  font-weight: 300;
+
+}
+.integer-content span{
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* =================- MINIMIZE-SECTION / business / - ============= */
+.minimize_content{
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: center;
+}
+.minimize_content span{
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#000 40%,#6b6b6b 72%,#dfdfdf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Poppins,sans-serif;
+  font-weight: 300;
+}
+.minimize_content ul{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 1.5rem;
+}
+.minimize_content ul li{
+  display: flex;
+  align-items: center;
+column-gap: 9px;
+}
+
+.minimize_content img{
+  width: 431px;
+  height: 409px;
+}
+/*  - REUSBLE CODE IN MINIMIZE / BUSINESS / CLIENT - */
+.markIcon{
+  width: 33px;
+  height: 32px;
+}
+.btn-group{
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-group .btn{
+  border: 1px solid #000;
+  background-color: transparent;
+  border-radius: 200px;
+  padding: 12px 24px;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.btn-group .btn:hover{
+  background-color: #f1efef;
+}
+.btn_link{
+  display: flex;
+  align-items: center !important;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.btn_link a{
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  
+}
+.rightArrow{
+  width: 21px;
+  height: 21px;
+  margin-top: 7px;
+}
+/*  END - REUSBLE CODE IN MINIMIZE / BUSINESS / CLIENT - */
 /**************** media querise **********************/
 @media screen and (max-width: 992px) {
   .nav_responsive {
@@ -302,8 +421,6 @@ button {
   
   }
   .demo_component video {
-   
     top: 10%;
-   
   }
 }

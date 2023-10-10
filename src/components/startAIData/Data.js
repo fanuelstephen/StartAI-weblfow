@@ -1,3 +1,4 @@
+
 const HomeContent = [
     {
       title: " based on the AI technology",
@@ -15,6 +16,7 @@ const HomeContent = [
   
   export { HomeContent };
   
+
   const DemoData = [
     {
       title: "Better user satisfaction",
@@ -25,4 +27,47 @@ const HomeContent = [
       logo5: "assert/HitechDark.svg"
     },
   ];
-  export { DemoData };
+export { DemoData };
+
+  
+const IntegrateData = [
+  {
+    IntegrateIcon: "/assert/icon1.png",
+    IntegrateTittle: "Registration",
+    IntegrateDesc: "Create your company account to start using all features",
+  },
+  {
+    IntegrateIcon: "/assert/icon2.png",
+    IntegrateTittle: "Set up the AI",
+    IntegrateDesc: "Choose your branding colors, tone of voice and more.",
+  },
+  {
+    IntegrateIcon: "/assert/icon3.png",
+    IntegrateTittle: "Publish the AI bot",
+    IntegrateDesc: "Start using the bot on your website with line of code",
+  }
+];
+ export { IntegrateData}
+
+
+const MinimizeData = [
+  {
+    desc1: "Efficient workflows and custom white label solution",
+    desc2: "Simple installation without development skills",
+    desc3: "Third party integrations with different SaaS tools",
+    image:"/assert/img3.png"
+   }
+]
+ 
+export { MinimizeData }
+
+const BusinessData = [
+  {
+    desc1: "Efficient workflows and custom white label solution",
+    desc2: "Simple installation without development skills",
+    desc3: "Third party integrations with different SaaS tools",
+    image:"/assert/img4.png"
+   }
+]
+ 
+export {BusinessData}
