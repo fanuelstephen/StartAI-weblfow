@@ -6,6 +6,8 @@ import Demo from "./components/demo/Demo";
 import Integrate from "./components/integrate/Integrate";
 import Minimize from "./components/minimize/Minimize";
 import Business from "./components/business/Business";
+import Client from "./components/client/Client";
+import Resources from "./components/resources/Resources";
 
 
 function App() {
@@ -23,7 +25,9 @@ function App() {
       <Demo />
       <Integrate />
       <Minimize />
-      <Business/>
+      <Business />
+      <Client />
+      <Resources/>
     </div>
   );
 }

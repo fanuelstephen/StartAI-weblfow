@@ -69,5 +69,73 @@ const BusinessData = [
     image:"/assert/img4.png"
    }
 ]
+export { BusinessData }
+
+const ClientData = [
+  {
+    desc1: "Efficient workflows and custom white label solution",
+    desc2: "Simple installation without development skills",
+    desc3: "Third party integrations with different SaaS tools",
+    image:"/assert/img5.png"
+   }
+]
  
-export {BusinessData}
+export { ClientData }
+
+const CardData = [
+  {
+    cardimg: "/assert/card1.jpeg",
+    title: "5 Great Web Design Resources",
+    desc: "Est placeat perspicia",
+    img: "/assert/author1_anna.png",
+    authorName: "Anna Oneal",
+    date: "March 28, 2023",
+    realTime:". 3 min read"
+  },
+  {
+    cardimg: "/assert/card2.jpeg",
+    title: "What Will Website Be Like In 100 Years?",
+    desc: "Dolorem laborum vero laudantium perspiciatis iste ",
+    img: "/assert/author3.png",
+    authorName: "Carla Rosa",
+    date: "March 28, 2023",
+    realTime:". 2 min read"
+  },
+  {
+    cardimg: "/assert/card1.jpeg",
+    title: "10 Great Examples of Responsive Websites",
+    desc: "Et odit soluta sint temporibus quia dolorem aut unde est. Voluptatibus molestiae vitae iste et adipisci ex saepe veritatis. Quam excepturi ",
+    img: "/assert/author2.png",
+    authorName: "MIke Dean",
+    date: "March 28, 2023",
+    realTime:". 2 min read"
+  },
+  {
+    cardimg: "/assert/card4.jpeg",
+    title: "5 Principles Of Effective Web Design",
+    desc: "Sapiente amet molestias cum fugiat qui aspernatur.",
+    img: "/assert/author3.png",
+    authorName: "MIke Dean",
+    date: "March 28, 2023",
+    realTime:". 3 min read"
+  },
+  {
+    cardimg: "/assert/card5.jpeg",
+    title: "20 Myths About Web Design Processes",
+    desc: "Perferendis qui qui nihil ut numquam consequatur. Commodi sit quia eligendi. Aut maiores voluptates est.",
+    img: "/assert/author3.png",
+    authorName: "Carla Rosa",
+    date: "March 28, 2023",
+    realTime:". 5 min read"
+  },
+  {
+    cardimg: "/assert/card6.jpeg",
+    title: "7 Must Have Tools For Web Designers & Developers",
+    desc: "Enim exercitationem sunt fuga molestiae. Assumenda sit quis impedit. Autem optio ad et sed. Dolor voluptates ea quis fuga adipisci commod",
+    img: "/assert/author1_anna.png",
+    authorName: "Anna Oneal",
+    date: "March 28, 2023",
+    realTime:". 4 min read"
+  }
+]
+export { CardData }

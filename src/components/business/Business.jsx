@@ -7,10 +7,13 @@ import { BusinessData } from "../startAIData/Data";
 const Business=()=> {
   return (
     <div className="section">
-    <div className="minimize_content">
+    <div className="business_content">
+        <div className='business-img-box'>
             <img src={BusinessData[0].image} alt="" />
+        </div>
+              
         <div>
-        <span><strong>Minimize</strong>the costs and support your clients  <strong> better</strong></span>
+        <span>Win <strong>more clients</strong> in the long <br /> term Business</span>
         <div>
             <ul>
                 <li> <IoCheckmarkCircleSharp  className="markIcon"/>{BusinessData[0].desc1}</li>

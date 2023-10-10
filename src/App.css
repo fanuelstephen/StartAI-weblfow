@@ -255,7 +255,8 @@ button {
 /* ================- INTERGRATE SECTION- ============= */
 .section{
   margin: 7rem 0;
-  padding: 0px  72px;
+  padding:0  72px;
+ 
 }
 .integrate-heading{
   text-align: center;
@@ -373,6 +374,89 @@ column-gap: 9px;
   margin-top: 7px;
 }
 /*  END - REUSBLE CODE IN MINIMIZE / BUSINESS / CLIENT - */
+
+/* =================-BUSINESS-SECTION / - ============= */
+.business_content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+   padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.business_content span{
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#000 40%,#6b6b6b 72%,#dfdfdf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Poppins,sans-serif;
+  font-weight: 300;
+}
+.business_content ul{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 1.5rem;
+}
+.business_content ul li{
+  display: flex;
+  align-items: center;
+ column-gap: 9px;
+}
+.business-img-box {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.business_content img{
+  width: 456px;
+  height: 443px;
+}
+/* =================-CLIENT-SECTION / - ============= */
+.client_content{
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.client_content span{
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#000 40%,#6b6b6b 72%,#dfdfdf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Poppins,sans-serif;
+  font-weight: 300;
+}
+.client_content ul{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 1.5rem;
+}
+.client_content ul li{
+  display: flex;
+  align-items: center;
+column-gap: 9px;
+}
+.client_img-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client_content img{
+  width: 435px;
+  height: 443px;
+}
+
+
 /**************** media querise **********************/
 @media screen and (max-width: 992px) {
   .nav_responsive {
