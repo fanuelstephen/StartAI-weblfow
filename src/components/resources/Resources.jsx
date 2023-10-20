@@ -1,25 +1,29 @@
-import React from 'react'
+import React from "react";
 import { CardData } from "../startAIData/Data";
-import Card from '../card/Card';
+import Card from "../card/Card";
 
-const Resources=()=> {
+const Resources = () => {
   return (
-      <div className='section'>
-          <div className='resourses-heading'>
-              <span><strong>Useful</strong>Resources</span>
+    <div className="section">
+      <div className="resourses-heading">
+        <span>
+          <strong>Useful</strong> Resources
+        </span>
+        <p>
+          Discover our useful resources and read articles on different
+          categories
+        </p>
+      </div>
 
-              <p>Discover our useful resources and read articles on different categories</p>
+      <div className="card_box">
+        {CardData.map((value, i) =>(
+          <div key={i}>
+            <Card ResourcesCard={value} />
           </div>
-
-          <div>
-              {CardData.map((value, i) => (
-                  <div className='card_box' key={i}>
-                      <Card ResourcesCard={value}/>
-                 </div>
-             ))} 
-          </div>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Resources
+export default Resources;

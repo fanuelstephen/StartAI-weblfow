@@ -11,7 +11,6 @@ const Demo = () => {
         <p>ProLine</p>
         <p>Hitech</p>
         <p>FLash</p>
- 
       </div>
       <div className="demo_section">
         <div className="demo_component">
@@ -20,7 +19,8 @@ const Demo = () => {
           </video>
         </div>
         <div className="demo_content">
-          <h1><strong>Better </strong>
+          <h1>
+            <strong>Better </strong>
             <span>user </span>satisfaction
           </h1>
           <p>{DemoData[0].desc}</p>

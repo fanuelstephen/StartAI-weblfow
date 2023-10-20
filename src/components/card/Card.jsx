@@ -1,29 +1,30 @@
-import React from 'react'
+import React from "react";
 
-const Card = ( {ResourcesCard} ) => {
+const Card = ({ ResourcesCard }) => {
   return (
-    <div className='box'>
-          <img src={ResourcesCard.cardimg} alt="" />  
-          <div className='box_content'>
-              <div>Analytic</div>
-              <h5>{ResourcesCard.title}</h5>
-              <p>{ResourcesCard.desc}</p>
-              
-              <div className='auther'>
-                  <img src={ResourcesCard.img} alt="" />
-                  <div className='auather-content'>
-                      <span>{ResourcesCard.authoraName}</span>
-                      <div className='date'>
-                          {ResourcesCard}
-                          <div className='real_time'>
-                              {ResourcesCard.realTime}
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div> 
-    </div>
-  )
-}
+    <div className="box">
+      <img src={ResourcesCard.cardimg} alt="" className="cardImg" />
+      <div className="box_content">
+        <div>
+          <span className="R-btn">Analytic</span>
+          <h1>{ResourcesCard.title}</h1>
+          <p>{ResourcesCard.desc}</p>
+        </div>
 
-export default Card
+        <div className="auther">
+          <img src={ResourcesCard.img} alt="" />
+          <div className="auather-content">
+            <span>{ResourcesCard.authorName}</span>
+            <div className="date">
+              <div>{ResourcesCard.date}</div>
+              <strong> . </strong>
+              <div className="real_time">{ResourcesCard.realTime}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
