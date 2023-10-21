@@ -4,7 +4,7 @@ const Integrate = () => {
     <div className="section">
       <div className="integrate-heading">
         <p>
-          Integrate the AI support <br /> with <strong>1 line of code</strong>
+          Integrate the AI support with <strong>1 line of code</strong>
         </p>
       </div>
       <div className="integer-content">

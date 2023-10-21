@@ -753,6 +753,9 @@ button {
 
     /* background-color: #421abb; */
   }
+  .real_time {
+    display: none;
+  }
   .nav_responsive ul {
     display: flex;
     flex-direction: column;
@@ -865,5 +868,88 @@ button {
   }
   .adressess {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    margin: 5rem 0;
+    padding: 0px 38px;
+  }
+  .demo_section {
+    gap: 3rem;
+  }
+
+  .home {
+    margin-top: 14px;
+  }
+  .home_content h2 {
+    font-size: 2.35rem;
+  }
+  .home_content p {
+    font-size: 1rem;
+  }
+  .demo_content h1 {
+    font-size: 2.5rem;
+  }
+  .text-size-medium {
+    font-size: 14px;
+  }
+  .demo_content p {
+    font-size: 1rem;
+  }
+  .demo_component video {
+    width: 643px;
+  }
+  .integrate-heading {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .integrate-heading {
+    padding-top: 19px;
+  }
+  .integer-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 1rem 0;
+  }
+  .minimize_content span {
+    font-size: 2rem;
+  }
+  .business_content span {
+    font-size: 2rem;
+  }
+  .client_content span {
+    font-size: 2rem;
+  }
+  .resourses-heading span {
+    font-size: 39px;
+  }
+  .resourses-heading p {
+    font-size: 16px;
+  }
+  .support_content span {
+    font-size: 35px;
+  }
+  .support_content p {
+    font-size: 16px;
+  }
+  .footer {
+    padding: 0px 40px;
+  }
+  .footer_end {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .footer_end ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 1.5rem;
+  }
+  .footer_end p {
+    font-size: 16px;
+    margin-bottom: 2rem;
   }
 }

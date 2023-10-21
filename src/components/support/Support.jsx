@@ -6,8 +6,7 @@ const Support = () => {
     <div className="section support_section">
       <div className="support_content">
         <span>
-          Ready to <strong> save more </strong> on the <br />
-          customer support side?
+          Ready to <strong> save more </strong> on the customer support side?
         </span>
         <p>
           Automate routine tasks and provide fast, accurate responses & reduce

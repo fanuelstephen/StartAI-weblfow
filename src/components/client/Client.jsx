@@ -9,7 +9,7 @@ const Client = () => {
       <div className="client_content">
         <div>
           <span>
-            Grow your<strong>customer base </strong> <br />
+            Grow your<strong>customer base </strong>
             easier than before
           </span>
           <div>

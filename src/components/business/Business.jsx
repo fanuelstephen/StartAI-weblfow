@@ -13,7 +13,7 @@ const Business = () => {
 
         <div>
           <span>
-            Win <strong>more clients</strong> in the long <br /> term Business
+            Win <strong>more clients</strong> in the long term Business
           </span>
           <div>
             <ul>
