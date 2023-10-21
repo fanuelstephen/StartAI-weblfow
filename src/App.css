@@ -38,7 +38,6 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
-
   /* margin-top: -56px;  */
   padding: 11px 72px;
   height: 100vh;
@@ -951,5 +950,73 @@ button {
   .footer_end p {
     font-size: 16px;
     margin-bottom: 2rem;
+  }
+  @media screen and (max-width: 479px) {
+    .section {
+      padding: 0px 22px;
+      margin: 2rem 0;
+    }
+    .hero_section {
+      margin-top: -56px;
+      padding: 70px 27px;
+      height: 100vh;
+
+      background-position: 10%;
+      background-position-x: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      overflow: hidden;
+    }
+    .home_content h2 {
+      font-size: 2.31rem;
+    }
+    .demo_section {
+      margin: 4rem 0;
+      padding: 0 26px;
+    }
+    .demo_component video {
+      width: 427px;
+      /* object-fit: cover; */
+    }
+    .minimize_content span {
+      font-size: 2.1rem;
+    }
+    .minimize_content img {
+      width: 403px;
+      height: 385px;
+    }
+    .business_content span {
+      font-size: 2.1rem;
+    }
+    .business_content img {
+      width: 403px;
+      height: 385px;
+    }
+    .client_content span {
+      font-size: 2.1rem;
+    }
+    .client_content img {
+      width: 403px;
+      height: 385px;
+    }
+    .resourses-heading p {
+      font-size: 16px;
+      text-align: center;
+    }
+    .resourses-heading span {
+      margin-bottom: 15px;
+    }
+    .card_box {
+      grid-template-columns: 1fr;
+    }
+    .support_content span {
+      font-size: 38px;
+    }
+    .support_content p {
+      font-size: 17px;
+    }
+    .footer {
+      padding: 0px 25px;
+    }
   }
 }
