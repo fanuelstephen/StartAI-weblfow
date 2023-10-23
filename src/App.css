@@ -1035,11 +1035,11 @@ button {
     display: flex;
   }
   button {
-    padding: 13px 24px;
+    padding: 10px 24px;
     border-radius: 30px;
   }
   .btn1 {
-    font-size: 14px;
+    font-size: 13px;
   }
   .home {
     margin-top: 3px;
