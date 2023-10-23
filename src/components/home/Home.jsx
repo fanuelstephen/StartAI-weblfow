@@ -13,7 +13,7 @@ const Home = () => {
           based on the AI technology
         </h2>
         <p>{HomeContent[0].homeDesc}</p>
-        <div>
+        <div className="home-btn-container">
           <button className="btn1">{HomeContent[0].btnTex1}</button>
           <button className="btn2">Book a Demo</button>
         </div>

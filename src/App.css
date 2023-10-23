@@ -30,7 +30,7 @@ button {
   margin: 0 9.6px;
   padding: 10px 0;
 }
-.hero_section {
+/* .hero_section {
   position: relative;
   background-image: url(https://assets.website-files.com/6465ef4a3ebaf6d1094d9e5b/6466041dee5ad19ad3126185_hero%20circle.png);
   background-position: 100%;
@@ -38,10 +38,10 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
-  /* margin-top: -56px;  */
+  margin-top: -56px; 
   padding: 11px 72px;
   height: 100vh;
-}
+} */
 .navigation {
   /* position: relative; */
   display: flex;
@@ -234,7 +234,8 @@ button {
   left: 0;
   width: 758px;
   object-fit: cover;
-  height: 486px;
+  /* height: 486px; */
+  height: fit-content;
 
   border-radius: 25px;
   overflow: hidden;
@@ -812,6 +813,7 @@ button {
   }
   .demo_component video {
     width: 856px;
+    height: auto;
   }
   /*  ------------------------------------intergrated */
   .integer-content {
@@ -899,6 +901,7 @@ button {
   }
   .demo_component video {
     width: 643px;
+    height: auto;
   }
   .integrate-heading {
     text-align: center;
@@ -976,6 +979,7 @@ button {
     }
     .demo_component video {
       width: 427px;
+      height: auto;
       /* object-fit: cover; */
     }
     .minimize_content span {
@@ -1018,5 +1022,61 @@ button {
     .footer {
       padding: 0px 25px;
     }
+  }
+}
+@media screen and (max-width: 375px) {
+  .demo_section {
+    padding: 0 17px;
+  }
+  .home_content h2 {
+    font-size: rem;
+  }
+  .home-btn-container {
+    display: flex;
+  }
+  button {
+    padding: 13px 24px;
+    border-radius: 30px;
+  }
+  .btn1 {
+    font-size: 14px;
+  }
+  .home {
+    margin-top: 3px;
+  }
+  .demo_logos {
+    padding: 8px 0;
+  }
+  .demo_component video {
+    width: 341px;
+    height: auto;
+  }
+  .demo_component {
+    position: relative;
+    height: 209px;
+  }
+  .minimize_content img {
+    width: 326px;
+    height: auto;
+  }
+  .business_content img {
+    width: 326px;
+    height: auto;
+  }
+  .client_content img {
+    width: 326px;
+    height: auto;
+  }
+  .support_content span {
+    font-size: 35px;
+  }
+  .support_content p {
+    font-size: 15px;
+  }
+  .section {
+    padding: 0px 25px;
+  }
+  .footer_item_links {
+    gap: 2rem;
   }
 }
