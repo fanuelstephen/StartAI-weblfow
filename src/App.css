@@ -1079,4 +1079,8 @@ button {
   .footer_item_links {
     gap: 2rem;
   }
+  .nav_responsive {
+    top: 11%;
+  }
 }
+

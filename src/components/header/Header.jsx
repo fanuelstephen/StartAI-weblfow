@@ -2,6 +2,7 @@ import React from "react";
 import { HiShoppingCart } from "react-icons/hi";
 import { BsPerson } from "react-icons/bs";
 import { MdMenu } from "react-icons/md";
+// import { RxCross2 } from "react-icons/rx";
 
 const Header = ({ opneNavigation, oppenSidebar }) => {
   return (
@@ -37,6 +38,7 @@ const Header = ({ opneNavigation, oppenSidebar }) => {
             </button>
             <HiShoppingCart className="icon shoping_cart" />
             <BsPerson className="icon customer_icon" />
+
             <MdMenu className="icon nav_menu" onClick={opneNavigation} />
           </div>
         </div>
