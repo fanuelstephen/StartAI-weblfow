@@ -742,7 +742,7 @@ button {
   }
   .nav_responsive {
     position: absolute;
-    top: 17%;
+    top: 12%;
     left: 0;
     padding-left: 28px;
     padding-top: 28px;
@@ -1083,4 +1083,3 @@ button {
     top: 11%;
   }
 }
-
