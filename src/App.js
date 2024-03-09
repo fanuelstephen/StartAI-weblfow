@@ -10,17 +10,19 @@ import Client from "./components/client/Client";
 import Resources from "./components/resources/Resources";
 import Support from "./components/support/Support";
 import Footer from "./components/footer/Footer";
+import { Router, Route } from "react-router-dom";
 
 function App() {
-  const [oppenSidebar, setOppenSidebar] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
-  const opneNavigation = () => {
-    setOppenSidebar(!oppenSidebar);
+  const handleMenu = () => {
+    console.log("clicked");
+    setOpenMenu(!openMenu);
   };
   return (
     <div className="container">
       <div className="hero_section">
-        <Header opneNavigation={opneNavigation} oppenSidebar={oppenSidebar} />
+        <Header openMenu={openMenu} handleMenu={handleMenu} />
         <Home />
       </div>
       <div>

@@ -1,16 +1,19 @@
 import React from "react";
 import { DemoData } from "../startAIData/Data";
+import Marquee from "react-fast-marquee";
 
 const Demo = () => {
   return (
     <div>
       <div className="demo_logos">
-        <p>Snowflake</p>
-        <p>DEVWISE</p>
-        <p>Invert</p>
-        <p>ProLine</p>
-        <p>Hitech</p>
-        <p>FLash</p>
+        <Marquee>
+          <p>Snowflake</p>
+          <p>DEVWISE</p>
+          <p>Invert</p>
+          <p>ProLine</p>
+          <p>Hitech</p>
+          <p>FLash</p>
+        </Marquee>
       </div>
       <div className="demo_section">
         <div className="demo_component">

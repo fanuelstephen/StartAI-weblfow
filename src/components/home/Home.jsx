@@ -2,7 +2,6 @@ import React from "react";
 import { HomeContent } from "../startAIData/Data";
 
 const Home = () => {
-  console.log(HomeContent);
   return (
     <div className="home">
       <div className="home_content">
