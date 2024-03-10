@@ -29,12 +29,12 @@ const Minimize = () => {
           </div>
 
           <div className="btn-group">
-            <a href="#" className="btn">
+            <a href="/" className="btn">
               Start for free
             </a>
             <div className="btn_link">
               <div>
-                <a href="#">Book a demo </a>
+                <a href="/">Book a demo </a>
               </div>
               <div>
                 <RiArrowRightSLine className="rightArrow" />

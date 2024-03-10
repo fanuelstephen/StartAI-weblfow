@@ -10,7 +10,6 @@ import Client from "./components/client/Client";
 import Resources from "./components/resources/Resources";
 import Support from "./components/support/Support";
 import Footer from "./components/footer/Footer";
-import { Router, Route } from "react-router-dom";
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);

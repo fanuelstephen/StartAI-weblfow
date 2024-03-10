@@ -6,7 +6,6 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { AiFillFire } from "react-icons/ai";
-import { RxCross2 } from "react-icons/rx";
 
 const Footer = () => {
   return (
@@ -53,29 +52,29 @@ const Footer = () => {
             <ul className="footer_item_links">
               <div>
                 <li className="links-footer">
-                  <a href="#">About us</a>
-                  <a href="#">Book a demo</a>
-                  <a href="#">Blog</a>
-                  <a href="#">Pricing</a>
-                  <a href="#">Contact</a>
+                  <a href="/">About us</a>
+                  <a href="/">Book a demo</a>
+                  <a href="/">Blog</a>
+                  <a href="/">Pricing</a>
+                  <a href="/">Contact</a>
                 </li>
               </div>
 
               <div>
                 <li className="links-footer">
-                  <a href="#">Features</a>
-                  <a href="#">Sign In</a>
-                  <a href="#">Sign Up</a>
-                  <a href="#">Forgot Password</a>
+                  <a href="/">Features</a>
+                  <a href="/">Sign In</a>
+                  <a href="/">Sign Up</a>
+                  <a href="/">Forgot Password</a>
                 </li>
               </div>
 
               <div>
                 <li className="links-footer">
-                  <a href="#">Style Guide</a>
-                  <a href="#">Changelog</a>
-                  <a href="#">Licenses</a>
-                  <a href="#" className="footer-btn">
+                  <a href="/">Style Guide</a>
+                  <a href="/">Changelog</a>
+                  <a href="/">Licenses</a>
+                  <a href="/" className="footer-btn">
                     More Templates
                   </a>
                 </li>
@@ -97,11 +96,11 @@ const Footer = () => {
           </span>
         </p>
         <div>
-          <ul >
+          <ul>
             <li>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-              <a href="#">Cookies Settings</a>
+              <a href="/">Privacy Policy</a>
+              <a href="/">Terms of Service</a>
+              <a href="/">Cookies Settings</a>
             </li>
           </ul>
         </div>

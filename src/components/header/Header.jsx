@@ -43,19 +43,19 @@ const Header = ({ handleMenu, openMenu }) => {
             <div className={openMenu ? "show" : "navbar_links"}>
               <ul>
                 <li>
-                  <a href="#">Features</a>
+                  <a href="/">Features</a>
                 </li>
                 <li>
-                  <a href="#">Pricing</a>
+                  <a href="/">Pricing</a>
                 </li>
                 <li>
-                  <a href="#">About us</a>
+                  <a href="/">About us</a>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <a href="/">Blog</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="/">Contact</a>
                 </li>
               </ul>
             </div>
@@ -63,7 +63,7 @@ const Header = ({ handleMenu, openMenu }) => {
 
           <div className="navigation-right">
             <button id="btn" className={openMenu ? "nav_button" : ""}>
-              <a href="#">Book a demo</a>
+              <a href="/">Book a demo</a>
             </button>
             <HiShoppingCart className="icon shoping_cart" onClick={openModal} />
             <BsPerson className="icon customer_icon" />
