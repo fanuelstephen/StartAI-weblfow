@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { HiShoppingCart } from "react-icons/hi";
 import { BsPerson } from "react-icons/bs";
 import { MdMenu } from "react-icons/md";
+
 // import { RxCross2 } from "react-icons/rx";
 
 const Header = ({ handleMenu, openMenu }) => {
@@ -39,25 +40,29 @@ const Header = ({ handleMenu, openMenu }) => {
       <div className="header">
         <div className="navigation">
           <div className="nav_content">
-            <img src="/assert/logo.svg" alt="logo" />
-            <div className={openMenu ? "show" : "navbar_links"}>
-              <ul>
-                <li>
-                  <a href="/">Features</a>
-                </li>
-                <li>
-                  <a href="/">Pricing</a>
-                </li>
-                <li>
-                  <a href="/">About us</a>
-                </li>
-                <li>
-                  <a href="/">Blog</a>
-                </li>
-                <li>
-                  <a href="/">Contact</a>
-                </li>
-              </ul>
+            <a href="/">
+              <img src="/assert/logo.svg" alt="logo" />
+            </a>
+            <div className={openMenu ? "show" : "hide"}>
+              <div>
+                <ul>
+                  <li>
+                    <a href="/"> Features</a>
+                  </li>
+                  <li>
+                    <a href="/">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="/">About us</a>
+                  </li>
+                  <li>
+                    <a href="/">Blog</a>
+                  </li>
+                  <li>
+                    <a href="/">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -65,10 +70,15 @@ const Header = ({ handleMenu, openMenu }) => {
             <button id="btn" className={openMenu ? "nav_button" : ""}>
               <a href="/">Book a demo</a>
             </button>
+
             <HiShoppingCart className="icon shoping_cart" onClick={openModal} />
+
             <BsPerson className="icon customer_icon" />
 
-            <MdMenu className="icon nav_menu" onClick={handleMenu} />
+            <MdMenu
+              className={`icon ${openMenu ? "nav_menu-green" : "nav_menu"}`}
+              onClick={handleMenu}
+            />
           </div>
         </div>
       </div>

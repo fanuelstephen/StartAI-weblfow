@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Home from "./components/home/Home";
 import Header from "./components/header/Header";
+import Home from "./components/home/Home";
 import Demo from "./components/demo/Demo";
 import Integrate from "./components/integrate/Integrate";
 import Minimize from "./components/minimize/Minimize";
@@ -15,26 +15,23 @@ function App() {
   const [openMenu, setOpenMenu] = useState(false);
 
   const handleMenu = () => {
-    console.log("clicked");
     setOpenMenu(!openMenu);
   };
+
   return (
     <div className="container">
-      <div className="hero_section">
-        <Header openMenu={openMenu} handleMenu={handleMenu} />
-        <Home />
-      </div>
-      <div>
-        <Demo />
-        <Integrate />
-        <Minimize />
-        <Business />
-        <Client />
-        <Resources />
-        <Support />
-        <Footer />
-      </div>
+      <Header openMenu={openMenu} handleMenu={handleMenu} />
+      <Home />
+      <Demo />
+      <Integrate />
+      <Minimize />
+      <Business />
+      <Client />
+      <Resources />
+      <Support />
+      <Footer />
     </div>
   );
 }
+
 export default App;

@@ -27,7 +27,7 @@ button {
 }
 /* *****************************HEADER  STYLE*/
 .header {
-  padding: 10px 0;
+  padding: 10px 72px;
 }
 .hero_section {
   position: relative;
@@ -62,11 +62,11 @@ button {
   margin-right: 20px;
   padding: 0;
 }
-.navbar_links ul {
+.hide ul {
   display: flex;
   align-items: center;
 }
-.navbar_links ul li a {
+.hide ul li a {
   font-size: 16px;
   padding: 24px 11.2px;
   color: #222;
@@ -74,7 +74,7 @@ button {
   transition: 0.5s ease;
   cursor: pointer;
 }
-.navbar_links ul li a:hover {
+.hide ul li a:hover {
   color: #6e45e9;
 }
 #btn {
@@ -102,7 +102,7 @@ button {
   font-size: 46px;
 }
 
-/* ***************************** navbar_links */
+/* ***************************** */
 .nav_menu {
   background-color: #000;
   width: 46px;
@@ -110,6 +110,10 @@ button {
   border: none;
   color: #fff;
   display: none;
+}
+.nav_menu-green {
+  background-color: green;
+  color: #fff;
 }
 
 /*  ******************************** HOME STYLE */
@@ -258,7 +262,6 @@ button {
 }
 /* ================- INTERGRATE SECTION- ============= */
 .section {
-  margin: 7rem 0;
   padding: 0 72px;
 }
 .integrate-heading {
@@ -736,22 +739,27 @@ button {
 /**************** media querise **********************/
 @media screen and (min-width: 1024px) {
   .home {
-    margin-top: 65px;
+    margin-top: 93px;
+    padding: 0 50px;
   }
-  .hero_section {
-    padding: 0 46px;
+  .header {
+    padding: 10px 50px;
   }
   .home_img img {
-    width: 643px;
-    height: 536px;
+    width: 503px;
+    height: 492px;
   }
 }
 @media screen and (max-width: 992px) {
+  .home {
+    margin-top: 93px;
+    padding: 0 50px;
+  }
+  .header {
+    padding: 10px 50px;
+  }
   .section {
     margin: 5rem 0;
-    padding: 0 46px;
-  }
-  .hero_section {
     padding: 0 46px;
   }
 
@@ -858,13 +866,13 @@ button {
     display: block;
     color: #fff;
   }
-  .navbar_links {
+  .hide {
     display: none;
   }
   /* menu */
   .show {
     position: absolute;
-    top: 15%;
+    top: 9%;
     left: 0;
     font-size: 20px;
     padding-left: 50px;
@@ -872,7 +880,6 @@ button {
     width: 100%;
     height: 30rem;
     background-color: #fff;
-    /* background-color: red; */
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   .show ul {
@@ -891,6 +898,13 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+  .home {
+    margin-top: 93px;
+    padding: 0 35px;
+  }
+  .header {
+    padding: 10px 35px;
+  }
   .section {
     margin: 5rem 0;
     padding: 0px 38px;
@@ -975,90 +989,94 @@ button {
     display: block;
     color: #fff;
   }
-  .navbar_links {
+  .hide {
     display: none;
   }
-  @media screen and (max-width: 479px) {
-    .section {
-      padding: 0px 22px;
-      margin: 2rem 0;
-    }
-    .hero_section {
-      margin-top: -56px;
-      padding: 70px 27px;
-      height: 100vh;
-      background-position: 10%;
-      background-position-x: right;
-      background-repeat: no-repeat;
-      background-size: contain;
-      overflow: hidden;
-    }
-    .home_content h2 {
-      font-size: 2.31rem;
-    }
-    .demo_section {
-      margin: 4rem 0;
-      padding: 0 26px;
-    }
-    .demo_component video {
-      width: 379px;
-      height: auto;
-      object-fit: cover;
-    }
-    .minimize_content span {
-      font-size: 2.1rem;
-    }
-    .minimize_content img {
-      width: 403px;
-      height: 385px;
-    }
-    .business_content span {
-      font-size: 2.1rem;
-    }
-    .business_content img {
-      width: 403px;
-      height: 385px;
-    }
-    .client_content span {
-      font-size: 2.1rem;
-    }
-    .client_content img {
-      width: 403px;
-      height: 385px;
-    }
-    .resourses-heading p {
-      font-size: 16px;
-      text-align: center;
-    }
-    .resourses-heading span {
-      margin-bottom: 15px;
-    }
-    .card_box {
-      grid-template-columns: 1fr;
-    }
-    .support_content span {
-      font-size: 38px;
-    }
-    .support_content p {
-      font-size: 17px;
-    }
-    .footer {
-      padding: 0px 25px;
-    }
+}
+@media screen and (max-width: 479px) {
+  .home {
+    margin-top: 93px;
+    padding: 0 25px;
+  }
+  .header {
+    padding: 10px 25px;
+  }
+  .section {
+    padding: 0px 22px;
+    margin: 2rem 0;
+  }
+  .hero_section {
+    margin-top: -56px;
+    padding: 70px 27px;
+    height: 100vh;
+    background-position: 10%;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .home_content h2 {
+    font-size: 2.31rem;
+  }
+  .demo_section {
+    margin: 4rem 0;
+    padding: 0 26px;
+  }
+  .demo_component video {
+    width: 379px;
+    height: auto;
+    object-fit: cover;
+  }
+  .minimize_content span {
+    font-size: 2.1rem;
+  }
+  .minimize_content img {
+    width: 403px;
+    height: 385px;
+  }
+  .business_content span {
+    font-size: 2.1rem;
+  }
+  .business_content img {
+    width: 403px;
+    height: 385px;
+  }
+  .client_content span {
+    font-size: 2.1rem;
+  }
+  .client_content img {
+    width: 403px;
+    height: 385px;
+  }
+  .resourses-heading p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .resourses-heading span {
+    margin-bottom: 15px;
+  }
+  .card_box {
+    grid-template-columns: 1fr;
+  }
+  .support_content span {
+    font-size: 38px;
+  }
+  .support_content p {
+    font-size: 17px;
+  }
+  .footer {
+    padding: 0px 25px;
   }
   .nav_menu {
     display: block;
     color: #fff;
   }
-  .navbar_links {
+  .hide {
     display: none;
   }
 }
+
 @media screen and (max-width: 375px) {
-  .header {
-    margin: 13px 0px;
-    padding: 10px 0;
-  }
   .show {
     position: absolute;
     top: 21%;
@@ -1076,7 +1094,7 @@ button {
     display: block;
     color: #fff;
   }
-  .navbar_links {
+  .hide {
     display: none;
   }
   .demo_section {
@@ -1095,9 +1113,7 @@ button {
   .btn1 {
     font-size: 13px;
   }
-  .home {
-    margin-top: 3px;
-  }
+
   .demo_logos {
     padding: 8px 0;
   }

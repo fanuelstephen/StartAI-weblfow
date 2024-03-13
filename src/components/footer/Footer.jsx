@@ -36,19 +36,6 @@ const Footer = () => {
 
         <div className="right_side">
           <div className="footer-links">
-            {/* {footerData.map((column, Index) => (
-              <div key={Index} className="footer-column">
-                <ul>
-                  {Array.isArray(column) &&
-                    column.map((link, linkIndex) => (
-                      <li key={linkIndex}>
-                        <a href={`/${link.toLowerCase()}`}>{link}</a>
-                      </li>
-                    ))}
-                </ul>
-              </div>
-            ))} */}
-
             <ul className="footer_item_links">
               <div>
                 <li className="links-footer">
@@ -105,19 +92,6 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-
-      {/* <div className="extra">
-        <div className="hire_us">
-          <div className="hire-us-wrapper">
-            <p className="hire-us-text ">
-              Hire us to build a website using this template. Get unlimited
-              design &amp;&nbsp;dev.
-            </p>
-            <div className="hire-us-btn">View pricing</div>
-          </div>
-          <RxCross2 className="cross-icon" />
-        </div>
-      </div> */}
     </div>
   );
 };
