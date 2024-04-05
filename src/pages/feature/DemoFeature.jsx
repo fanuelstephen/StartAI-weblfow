@@ -1,20 +1,9 @@
 import React from "react";
-import { DemoData } from "../startAIData/Data";
-import Marquee from "react-fast-marquee";
+import { DemoData } from "../../startAIData/Data";
 
-const Demo = () => {
+function DemoFeature() {
   return (
     <div>
-      <div className="demo_logos">
-        <Marquee>
-          <p>Snowflake</p>
-          <p>DEVWISE</p>
-          <p>Invert</p>
-          <p>ProLine</p>
-          <p>Hitech</p>
-          <p>FLash</p>
-        </Marquee>
-      </div>
       <div className="demo_section">
         <div className="demo_component">
           <video controls>
@@ -31,6 +20,6 @@ const Demo = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Demo;
+export default DemoFeature;

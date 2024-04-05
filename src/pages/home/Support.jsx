@@ -1,5 +1,5 @@
 import React from "react";
-import { SupportData } from "../startAIData/Data";
+import { SupportData } from "../../startAIData/Data";
 
 const Support = () => {
   return (

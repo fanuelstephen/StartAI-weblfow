@@ -1,7 +1,7 @@
 import React from "react";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
-import { BusinessData } from "../startAIData/Data";
+import { BusinessData } from "../../startAIData/Data";
 
 const Business = () => {
   return (

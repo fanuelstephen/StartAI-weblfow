@@ -1,6 +1,6 @@
 import React from "react";
-import { CardData } from "../startAIData/Data";
-import Card from "../card/Card";
+import { CardData } from "../../startAIData/Data";
+import Card from "./Card";
 
 const Resources = () => {
   return (
@@ -16,7 +16,7 @@ const Resources = () => {
       </div>
 
       <div className="card_box">
-        {CardData.map((value, i) =>(
+        {CardData.map((value, i) => (
           <div key={i}>
             <Card ResourcesCard={value} />
           </div>

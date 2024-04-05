@@ -145,6 +145,14 @@ const SupportData = [
 ];
 export { SupportData };
 
+const ProductData = [
+  {
+    productIMg: "/assert/product-img.png",
+  },
+];
+
+export { ProductData };
+
 const footerData = [
   {
     address: "Address:",
@@ -159,3 +167,42 @@ const footerData = [
   ["Style Guide", "Changelog", "Licenses"],
 ];
 export { footerData };
+
+const fqaData = [
+  {
+    question: "Is there a free tier?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores optio architecto, tempore aliquam beatae aut aliquid? Voluptatibus, corporis numquam molestiae quidem ex sunt suscipit tempore nulla sed officia incidunt sequi. Corrupti ducimus voluptas consectetur iure alias nostrum dolorum temporibus.",
+  },
+  {
+    question: "How much does it cost if I need more?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores optio architecto, tempore aliquam beatae aut aliquid? Voluptatibus, corporis numquam molestiae quidem ex sunt suscipit tempore nulla sed officia incidunt sequi. Corrupti ducimus voluptas consectetur iure alias nostrum dolorum temporibus.",
+  },
+  {
+    question: "Is Hyre also available for Enterprise?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores optio architecto, tempore aliquam beatae aut aliquid? Voluptatibus, corporis numquam molestiae quidem ex sunt suscipit tempore nulla sed officia incidunt sequi. Corrupti ducimus voluptas consectetur iure alias nostrum dolorum temporibus.",
+  },
+  {
+    question: "What does success look like for StartAI?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores optio architecto, tempore aliquam beatae aut aliquid? Voluptatibus, corporis numquam molestiae quidem ex sunt suscipit tempore nulla sed officia incidunt sequi. Corrupti ducimus voluptas consectetur iure alias nostrum dolorum temporibus.",
+  },
+  {
+    question: "How many active users are available in the free plan?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores optio architecto, tempore aliquam beatae aut aliquid? Voluptatibus, corporis numquam molestiae quidem ex sunt suscipit tempore nulla sed officia incidunt sequi. Corrupti ducimus voluptas consectetur iure alias nostrum dolorum temporibus.",
+  },
+  {
+    question: "Who is StartAI tool designed for?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores optio architecto, tempore aliquam beatae aut aliquid? Voluptatibus, corporis numquam molestiae quidem ex sunt suscipit tempore nulla sed officia incidunt sequi. Corrupti ducimus voluptas consectetur iure alias nostrum dolorum temporibus.",
+  },
+  {
+    question: "How can I get a custom plan?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores optio architecto, tempore aliquam beatae aut aliquid? Voluptatibus, corporis numquam molestiae quidem ex sunt suscipit tempore nulla sed officia incidunt sequi. Corrupti ducimus voluptas consectetur iure alias nostrum dolorum temporibus.",
+  },
+];
+export { fqaData };

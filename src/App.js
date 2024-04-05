@@ -1,36 +1,30 @@
-import { useState } from "react";
+import React from "react";
 import "./App.css";
-import Header from "./components/header/Header";
-import Home from "./components/home/Home";
-import Demo from "./components/demo/Demo";
-import Integrate from "./components/integrate/Integrate";
-import Minimize from "./components/minimize/Minimize";
-import Business from "./components/business/Business";
-import Client from "./components/client/Client";
-import Resources from "./components/resources/Resources";
-import Support from "./components/support/Support";
-import Footer from "./components/footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Feature from "./pages/feature/Feature";
+import Pricing from "./pages/pricing/Pricing";
+import About from "./pages/home/About";
+import Blog from "./pages/home/Blog";
+import Contact from "./pages/home/Contact";
+import BookDemo from "./pages/home/BookDemo";
+import HomeLayout from "./components/HomeLayout";
 
 function App() {
-  const [openMenu, setOpenMenu] = useState(false);
-
-  const handleMenu = () => {
-    setOpenMenu(!openMenu);
-  };
-
   return (
-    <div className="container">
-      <Header openMenu={openMenu} handleMenu={handleMenu} />
-      <Home />
-      <Demo />
-      <Integrate />
-      <Minimize />
-      <Business />
-      <Client />
-      <Resources />
-      <Support />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomeLayout />} />
+          <Route path="feature" element={<Feature />} />
+          <Route path="pricing" element={<Pricing />} />
+          <Route path="about-us" element={<About />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="contact-us" element={<Contact />} />
+          <Route path="Bookdemo" element={<BookDemo />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

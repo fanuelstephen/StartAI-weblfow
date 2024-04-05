@@ -1,4 +1,4 @@
-import { IntegrateData } from "../startAIData/Data";
+import { IntegrateData } from "../../startAIData/Data";
 const Integrate = () => {
   return (
     <div className="section">
