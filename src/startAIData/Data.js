@@ -1,3 +1,9 @@
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { IoMdTime } from "react-icons/io";
+
 const HomeContent = [
   {
     title: " based on the AI technology",
@@ -206,3 +212,172 @@ const fqaData = [
   },
 ];
 export { fqaData };
+
+const cardData = [
+  {
+    img: "/assert/perfect-basic.png",
+    title: "Basic",
+    monthlyPrice: "Free",
+    yearlyPrice: "Free",
+    btn: "Get started free",
+    desc: "Free plan for all users.",
+    lists: [
+      "2 Workspaces",
+      "10 Collaboration",
+      "unlimited tickets",
+      "unified Analytics",
+    ],
+  },
+  {
+    img: "/assert/perfect-efficient.png",
+    title: "Efficient",
+    monthlyPrice: "$25/month",
+    yearlyPrice: "$15/month",
+    btn: "Get efficient plan",
+    desc: "Ideal for small businesses..",
+    lists: [
+      "Unlimited Workspace",
+      "unlimited colaboration",
+      "15 GBdata storage",
+      "unified Analytics",
+      "Mobile apll acces",
+    ],
+  },
+  {
+    img: "/assert/perfect-team.png",
+    title: "Team",
+    monthlyPrice: "$39/month",
+    yearlyPrice: "$29/month",
+    btn: "Get team plan",
+    desc: "Works best for enterprise companies.",
+    lists: [
+      "Unlimited Workspace",
+      "unlimited colaboration",
+      "Unlimited GBdata storage",
+      "Time tracking module",
+      "Unified Analytics",
+      "HR & Payroll",
+    ],
+  },
+];
+export { cardData };
+
+const TeamMemberCardDetails = [
+  {
+    img: "/assert/img_1.png",
+    name: "James Wilson",
+    proffesional: "Product Designer",
+    facebook: <FaFacebook />,
+    twitter: <FaTwitterSquare />,
+    instagram: <FaInstagram />,
+  },
+  {
+    img: "/assert/img_2.png",
+    name: "James Wilson",
+    proffesional: "Product Designer",
+    facebook: <FaFacebook />,
+    twitter: <FaTwitterSquare />,
+    instagram: <FaInstagram />,
+  },
+  {
+    img: "/assert/img_3.png",
+    name: "James Wilson",
+    proffesional: "Product Designer",
+    facebook: <FaFacebook />,
+    twitter: <FaTwitterSquare />,
+    instagram: <FaInstagram />,
+  },
+  {
+    img: "/assert/img_4.png",
+    name: "James Wilson",
+    proffesional: "Product Designer",
+    facebook: <FaFacebook />,
+    twitter: <FaTwitterSquare />,
+    instagram: <FaInstagram />,
+  },
+  {
+    img: "/assert/img_1.png",
+    name: "James Wilson",
+    proffesional: "Product Designer",
+    facebook: <FaFacebook />,
+    twitter: <FaTwitterSquare />,
+    instagram: <FaInstagram />,
+  },
+  {
+    img: "/assert/img_2.png",
+    name: "James Wilson",
+    proffesional: "Product Designer",
+    facebook: <FaFacebook />,
+    twitter: <FaTwitterSquare />,
+    instagram: <FaInstagram />,
+  },
+  {
+    img: "/assert/img_3.png",
+    name: "James Wilson",
+    proffesional: "Product Designer",
+    facebook: <FaFacebook />,
+    twitter: <FaTwitterSquare />,
+    instagram: <FaInstagram />,
+  },
+  {
+    img: "/assert/img_4.png",
+    name: "James Wilson",
+    proffesional: "Product Designer",
+    facebook: <FaFacebook />,
+    twitter: <FaTwitterSquare />,
+    instagram: <FaInstagram />,
+  },
+];
+export { TeamMemberCardDetails };
+
+const currentlyData = [
+  {
+    title: "Product Designer",
+    locationIcon: <FaMapMarkerAlt />,
+    locaton: "san Francisco, CA",
+    timeIcon: <IoMdTime />,
+    time: "Full time",
+  },
+  {
+    title: "Marketing Growth",
+    locationIcon: <FaMapMarkerAlt />,
+    locaton: "Ontario, Canada",
+    timeIcon: <IoMdTime />,
+    time: "Part Time",
+  },
+  {
+    title: "DevOps Engineer",
+    locationIcon: <FaMapMarkerAlt />,
+    locaton: "Miami, Florida",
+    timeIcon: <IoMdTime />,
+    time: "Full time",
+  },
+  {
+    title: "UX/UI Designer",
+    locationIcon: <FaMapMarkerAlt />,
+    locaton: "san Francisco, CA",
+    timeIcon: <IoMdTime />,
+    time: "Full time",
+  },
+];
+export { currentlyData };
+
+const BetterPeoductData = [
+  {
+    amount: "467",
+    description: "Stutups job",
+  },
+  {
+    amount: "6254",
+    description: "Tickets resolved",
+  },
+  {
+    amount: "32",
+    description: "Industries covered",
+  },
+  {
+    amount: "$1.2M",
+    description: "Saved on jobs",
+  },
+];
+export { BetterPeoductData };

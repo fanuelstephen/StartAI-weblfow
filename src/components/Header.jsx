@@ -9,6 +9,10 @@ function Header() {
     setOpenMenu(!openMenu);
   };
 
+  const closeMenu = () => {
+    setOpenMenu(false);
+  };
+
   return (
     <div>
       <header className="header">
@@ -17,15 +21,24 @@ function Header() {
             <img src="/assert/logo.svg" alt="logo" />
           </Link>
           <nav className={openMenu ? "show" : "hide"}>
-            <Link to="/feature">Features</Link>
-            <Link to="/pricing">Pricing</Link>
-            <Link to="about-us">About Us</Link>
-            <Link to="blog">BLog</Link>
-            <Link to="contact-us">Contact</Link>
+            <Link to="/feature" onClick={closeMenu}>
+              Features
+            </Link>
+            <Link to="/pricing" onClick={closeMenu}>
+              Pricing
+            </Link>
+            <Link to="about-us" onClick={closeMenu}>
+              About Us
+            </Link>
+            <Link to="blog" onClick={closeMenu}>
+              Blog
+            </Link>
+            <Link to="contact-us" onClick={closeMenu}>
+              Contact
+            </Link>
           </nav>
         </div>
         <Heading openMenu={openMenu} handleMenu={handleMenu} />
-        <p></p>
       </header>
     </div>
   );
