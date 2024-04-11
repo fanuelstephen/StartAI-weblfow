@@ -65,6 +65,15 @@ const Heading = ({ handleMenu, openMenu }) => {
         ref={overlay}
         onClick={handleOverlay}
       ></div>
+      {/* temporar */}
+      <div className="link_box">
+        <Link to="sign-in" className="sign_dec">
+          Sign In
+        </Link>
+        <Link to="sign-up" className="sign_dec">
+          Sign Up
+        </Link>
+      </div>
     </div>
   );
 };

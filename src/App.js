@@ -9,12 +9,20 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import BookDemo from "./pages/bookDemo/BookDemo";
 import HomeLayout from "./components/HomeLayout";
-
+import AccountLayout from "./components/AccountLayout";
+import SignIn from "./pages/account/SignIn";
+import SignUp from "./pages/account/SignUp";
+import ForgotPassword from "./pages/account/ForgotPassword";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route element={<AccountLayout />}>
+          <Route path="sign-in" element={<SignIn />} />
+          <Route path="sign-up" element={<SignUp />} />
+          <Route path="forgot-password" element={<ForgotPassword />} />
+        </Route>
         <Route element={<Layout />}>
           <Route path="/" element={<HomeLayout />} />
           <Route path="feature" element={<Feature />} />

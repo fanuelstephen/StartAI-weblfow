@@ -107,6 +107,23 @@ button {
   display: flex;
   align-items: center;
 }
+.sign_dec {
+  color: #fff;
+  font-size: 17px;
+}
+/* LINK BOX */
+.link_box {
+  position: absolute;
+  top: 83%;
+  left: 91%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #a3a1a1;
+  padding: 20px 28px;
+  border-radius: 10px;
+  display: none;
+}
 
 .navigation-right {
   display: flex;
@@ -118,6 +135,7 @@ button {
   border-radius: 50%;
   padding: 12px;
   font-size: 46px;
+  cursor: pointer;
 }
 
 /* ***************************** */
@@ -759,8 +777,22 @@ button {
   align-items: center;
   justify-content: center;
 }
+.hide {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hide a {
+  cursor: pointer;
+  font-style: 20px;
+}
+
 /**************** media querise **********************/
 @media screen and (min-width: 1024px) {
+  .header {
+    padding: 10px 50px;
+    position: relative;
+  }
   /* feature editing part */
   .product_contantainer {
     padding: 25px;
@@ -795,9 +827,7 @@ button {
     margin-top: 93px;
     padding: 0 50px;
   }
-  .header {
-    padding: 10px 50px;
-  }
+
   .home_img img {
     width: 503px;
     height: 492px;
@@ -1220,6 +1250,107 @@ button {
 }
 
 @media screen and (max-width: 375px) {
+  /* ==========================>ACCOUNT */
+  .signIn_container {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .signIn_logo img {
+    margin-bottom: 20px;
+  }
+  .signIn_form_container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .signIn_form_container p {
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 30px;
+  }
+  .SignIn_form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .SignIn_form-content input {
+    height: auto;
+    min-height: 3.5rem;
+    background-color: transparent;
+    color: black;
+    border: 1px solid #e0e0e0;
+    border-radius: 200px;
+    padding: 0.5rem 0.75rem 0.5rem 1rem;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    outline: none;
+  }
+  .lable_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .signIn_link {
+    text-decoration: underline;
+    color: #000;
+    cursor: pointer;
+  }
+  .form_container {
+    display: grid;
+    gap: 30px;
+  }
+  .signIN_btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Log_in-btn,
+  .sign_in_btn {
+    padding: 15px 30px;
+    /* font-size: 15px; */
+  }
+  .Log_in-btn {
+    background-color: #6e45e9;
+    color: #fff;
+    font-weight: 500;
+  }
+  .sign_in_btn {
+    border: 1px solid #000;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .sign_in_btn span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .google_icon {
+    font-size: 1.2rem;
+  }
+  .signIn_img img {
+    width: 335px;
+    border-radius: 20px;
+  }
+  .sign-up-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 20px;
+  }
+  .sign-up-link a {
+    text-decoration: underline;
+    color: #000;
+    cursor: pointer;
+  }
+  /* ==========================>END ACCOUNT */
   /* ========================>BOOK DEMO */
   .spnedless_container {
     padding: 20px 20px;
