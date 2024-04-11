@@ -5,10 +5,11 @@ import Layout from "./components/Layout";
 import Feature from "./pages/feature/Feature";
 import Pricing from "./pages/pricing/Pricing";
 import About from "./pages/about/About";
-import Blog from "./pages/home/Blog";
-import Contact from "./pages/home/Contact";
-import BookDemo from "./pages/home/BookDemo";
+import Blog from "./pages/blog/Blog";
+import Contact from "./pages/contact/Contact";
+import BookDemo from "./pages/bookDemo/BookDemo";
 import HomeLayout from "./components/HomeLayout";
+
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route path="about-us" element={<About />} />
           <Route path="blog" element={<Blog />} />
           <Route path="contact-us" element={<Contact />} />
-          <Route path="Bookdemo" element={<BookDemo />} />
+          <Route path="BookDemo" element={<BookDemo />} />
         </Route>
       </Routes>
     </BrowserRouter>

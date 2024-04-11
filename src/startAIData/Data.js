@@ -88,6 +88,7 @@ const CardData = [
   {
     cardimg: "/assert/card1.jpeg",
     title: "5 Great Web Design Resources",
+    type: "Analytics",
     desc: "Est placeat perspicia",
     img: "/assert/author1_anna.png",
     authorName: "Anna Oneal",
@@ -97,6 +98,7 @@ const CardData = [
   {
     cardimg: "/assert/card2.jpeg",
     title: "What Will Website Be Like In 100 Years?",
+    type: "Marketing",
     desc: "Dolorem laborum vero laudantium perspiciatis iste ",
     img: "/assert/author3.png",
     authorName: "Carla Rosa",
@@ -106,6 +108,7 @@ const CardData = [
   {
     cardimg: "/assert/card1.jpeg",
     title: "10 Great Examples of Responsive Websites",
+    type: "Business",
     desc: "Et odit soluta sint temporibus quia dolorem aut unde est. Voluptatibus molestiae vitae iste et adipisci ex saepe veritatis. Quam excepturi ",
     img: "/assert/author2.png",
     authorName: "MIke Dean",
@@ -115,6 +118,7 @@ const CardData = [
   {
     cardimg: "/assert/card4.jpeg",
     title: "5 Principles Of Effective Web Design",
+    type: "Business",
     desc: "Sapiente amet molestias cum fugiat qui aspernatur.",
     img: "/assert/author3.png",
     authorName: "MIke Dean",
@@ -124,6 +128,7 @@ const CardData = [
   {
     cardimg: "/assert/card5.jpeg",
     title: "20 Myths About Web Design Processes",
+    type: "Analytics",
     desc: "Perferendis qui qui nihil ut numquam consequatur. Commodi sit quia eligendi. Aut maiores voluptates est.",
     img: "/assert/author3.png",
     authorName: "Carla Rosa",
@@ -133,6 +138,7 @@ const CardData = [
   {
     cardimg: "/assert/card6.jpeg",
     title: "7 Must Have Tools For Web Designers & Developers",
+    type: "Resources",
     desc: "Enim exercitationem sunt fuga molestiae. Assumenda sit quis impedit. Autem optio ad et sed. Dolor voluptates ea quis fuga adipisci commod",
     img: "/assert/author1_anna.png",
     authorName: "Anna Oneal",
@@ -213,7 +219,7 @@ const fqaData = [
 ];
 export { fqaData };
 
-const cardData = [
+const PricingData = [
   {
     img: "/assert/perfect-basic.png",
     title: "Basic",
@@ -260,7 +266,7 @@ const cardData = [
     ],
   },
 ];
-export { cardData };
+export { PricingData };
 
 const TeamMemberCardDetails = [
   {
@@ -381,3 +387,22 @@ const BetterPeoductData = [
   },
 ];
 export { BetterPeoductData };
+
+const contactData = [
+  {
+    img: "/assert/Email.svg",
+    title: "Email",
+    desc: "office@gmail.com",
+  },
+  {
+    img: "/assert/call.svg",
+    title: "Phone support",
+    desc: "+1 3370 009 000",
+  },
+  {
+    img: "/assert/Location.svg",
+    title: "Our location",
+    desc: "Blue Orchid Tower, Bucharest, Romania",
+  },
+];
+export { contactData };

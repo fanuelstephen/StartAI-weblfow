@@ -29,7 +29,7 @@ function BetterProduct() {
 
         <div className="company_features">
           {BetterPeoductData.map((data, i) => (
-            <div className="company_feature">
+            <div className="company_feature" key={i}>
               <div className="company_feature-content">
                 <h2>{data.amount}</h2>
                 <p>{data.description}</p>

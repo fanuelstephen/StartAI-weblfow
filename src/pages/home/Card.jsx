@@ -6,7 +6,7 @@ const Card = ({ ResourcesCard }) => {
       <img src={ResourcesCard.cardimg} alt="" className="cardImg" />
       <div className="box_content">
         <div>
-          <span className="R-btn">Analytic</span>
+          <span className="R-btn">{ResourcesCard.type}</span>
           <h1>{ResourcesCard.title}</h1>
           <p>{ResourcesCard.desc}</p>
         </div>

@@ -21,10 +21,10 @@ function Header() {
             <img src="/assert/logo.svg" alt="logo" />
           </Link>
           <nav className={openMenu ? "show" : "hide"}>
-            <Link to="/feature" onClick={closeMenu}>
+            <Link to="feature" onClick={closeMenu}>
               Features
             </Link>
-            <Link to="/pricing" onClick={closeMenu}>
+            <Link to="pricing" onClick={closeMenu}>
               Pricing
             </Link>
             <Link to="about-us" onClick={closeMenu}>

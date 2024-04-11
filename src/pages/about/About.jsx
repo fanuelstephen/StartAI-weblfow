@@ -9,7 +9,7 @@ function About() {
   return (
     <div>
       <WorkSmatter />
-      <BetterProduct />
+      <BetterProduct /> 
       <TeamMember />
       <Currently />
       <Support />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { cardData } from "../../startAIData/Data";
+import { PricingData } from "../../startAIData/Data";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 
 function PricingDetails() {
@@ -37,7 +37,7 @@ function PricingDetails() {
           </button>
         </div>
         <div className="card_content">
-          {cardData.map((data, i) => (
+          {PricingData.map((data, i) => (
             <div className="card" key={i}>
               <div>
                 <div className="card_heading">
@@ -46,7 +46,7 @@ function PricingDetails() {
                 </div>
                 <h3 className="card_description-1">
                   {selectedButton === "monthly"
-                    ?  data.monthlyPrice
+                    ? data.monthlyPrice
                     : data.yearlyPrice}
                 </h3>
               </div>
