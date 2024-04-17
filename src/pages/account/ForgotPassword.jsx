@@ -7,9 +7,11 @@ function ForgotPassword() {
     <div>
       <div className="signIn_container">
         <div className="sighIn_content">
-          <Link to="/" className="signIn_logo">
-            <img src="/assert/logo.svg" alt="logo" />
-          </Link>
+          <div className="login_logo">
+            <Link to="/">
+              <img src="/assert/logo.svg" alt="logo" />
+            </Link>
+          </div>
           <div className="signIn_form_container">
             <h1>Forgot password</h1>
             <p>Enter your email below to reset your password</p>
@@ -29,9 +31,9 @@ function ForgotPassword() {
             </form>
           </div>
 
-          <div className="sign-up-link">
+          <div className="login-link">
             <p>Don't have an account? </p>
-            <Link to="/account/sign-in">Sign in</Link>
+            <Link to="/sign-in">Sign in</Link>
           </div>
         </div>
 

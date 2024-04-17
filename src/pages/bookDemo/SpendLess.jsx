@@ -2,7 +2,7 @@ import React from "react";
 
 function SpendLess() {
   return (
-    <div className="spnedless_container">
+    <div className="spendless_container">
       <div className="spendless_content">
         <h1>
           <strong>Spend less</strong> on better candidates
@@ -41,24 +41,28 @@ function SpendLess() {
       <div className="form">
         <form action="#">
           <div className="form_details">
-            <div className="info">
-              <label htmlFor="firsName">First name</label>
-              <input type="text" name="name" placeholder="Your fist name" />
+            <div className="form_field">
+              <div className="info">
+                <label htmlFor="firsName">First name</label>
+                <input type="text" name="name" placeholder="Your fist name" />
+              </div>
+
+              <div className="info">
+                <label htmlFor="firsName">Last name</label>
+                <input type="text" name="name" placeholder="Your last name" />
+              </div>
             </div>
 
-            <div className="info">
-              <label htmlFor="firsName">Last name</label>
-              <input type="text" name="name" placeholder="Your last name" />
-            </div>
+            <div className="form_field">
+              <div className="info">
+                <label htmlFor="firsName">Work email</label>
+                <input type="text" name="name" placeholder="Your work email" />
+              </div>
 
-            <div className="info">
-              <label htmlFor="firsName">Work email</label>
-              <input type="text" name="name" placeholder="Your work email" />
-            </div>
-
-            <div className="info">
-              <label htmlFor="firsName">Organization name</label>
-              <input type="text" name="name" placeholder="Your work email" />
+              <div className="info">
+                <label htmlFor="firsName">Organization name</label>
+                <input type="text" name="name" placeholder="Your work email" />
+              </div>
             </div>
 
             <div className="info">

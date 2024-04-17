@@ -18,7 +18,7 @@ function ComparePlans() {
             <p className="basic_heading">Basic</p>
             <p className="basic_amount">Free</p>
             <p className="basic_discription">Good for small startups</p>
-            <button className="Basic_btn">Get started free</button>
+            <button className="Basic_btn">Get started</button>
           </div>
 
           <div className="efficient">
@@ -27,7 +27,7 @@ function ComparePlans() {
               $15<span>/mo</span>
             </p>
             <p className="efficient_discription">Good for small startups</p>
-            <button className="efficient_btn">Get efficient plan</button>
+            <button className="efficient_btn">Get started</button>
           </div>
 
           <div className="team">
@@ -36,7 +36,7 @@ function ComparePlans() {
               $25<span>/mo</span>
             </p>
             <p className="team_discription">Good for small startups</p>
-            <button className="team_btn">Get team plan</button>
+            <button className="team_btn">Get started</button>
           </div>
         </div>
       </div>

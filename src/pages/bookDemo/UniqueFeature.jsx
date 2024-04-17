@@ -11,7 +11,7 @@ function UniqueFeature() {
         <div className="uniquefeature_details">
           <h6>
             <strong>Minimize</strong> the costs and support your clients
-            <strong>better</strong>
+            <strong> better</strong>
           </h6>
           <img src={MinimizeData[0].image} alt="" />
         </div>

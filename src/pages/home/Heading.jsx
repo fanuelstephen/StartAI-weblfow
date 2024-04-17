@@ -1,10 +1,26 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { HiShoppingCart } from "react-icons/hi";
 import { BsPerson } from "react-icons/bs";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Heading = ({ handleMenu, openMenu }) => {
+  const [showHidden, setShowHidden] = useState("false");
+
+  const handleIconHover = () => {
+    setShowHidden(true);
+  };
+
+  const handleIconLeave = () => {
+    setShowHidden(false);
+  };
+  const handleLinkBoxHover = () => {
+    setShowHidden(true);
+  };
+
+  const handleLinkBoxLeave = () => {
+    setShowHidden(false);
+  };
   //select elements
   const modal = useRef(null);
   const overlay = useRef(null);
@@ -43,7 +59,11 @@ const Heading = ({ handleMenu, openMenu }) => {
 
         <HiShoppingCart className="icon shoping_cart" onClick={openModal} />
 
-        <BsPerson className="icon customer_icon" />
+        <BsPerson
+          className="icon customer_icon"
+          onMouseEnter={handleIconHover}
+          onMouseLeave={handleIconLeave}
+        />
 
         <MdMenu
           className={`icon ${openMenu ? "nav_menu-green" : "nav_menu"}`}
@@ -66,7 +86,11 @@ const Heading = ({ handleMenu, openMenu }) => {
         onClick={handleOverlay}
       ></div>
       {/* temporar */}
-      <div className="link_box">
+      <div
+        className={`link_box  ${showHidden ? "" : "hidden"}`}
+        onMouseEnter={handleLinkBoxHover}
+        onMouseLeave={handleLinkBoxLeave}
+      >
         <Link to="sign-in" className="sign_dec">
           Sign In
         </Link>

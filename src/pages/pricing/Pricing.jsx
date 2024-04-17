@@ -5,7 +5,7 @@ import PricingDetails from "./PricingDetails";
 
 function Pricing() {
   return (
-    <div>
+    <div className="pricing_layout">
       <PricingDetails />
       <ComparePlans />
       <FrequentlyAQ />

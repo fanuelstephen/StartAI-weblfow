@@ -7,9 +7,9 @@ import BetterProduct from "./BetterProduct";
 
 function About() {
   return (
-    <div>
+    <div className="about_layout">
       <WorkSmatter />
-      <BetterProduct /> 
+      <BetterProduct />
       <TeamMember />
       <Currently />
       <Support />

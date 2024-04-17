@@ -20,11 +20,11 @@ function Currently() {
                 <div className="location">
                   <div className="location_box">
                     <p className="currently_icons">{data.locationIcon}</p>
-                    <p className="current_desc">{data.locaton}</p>
+                    <span className="current_desc">{data.locaton}</span>
                   </div>
                   <div className="time_box">
                     <p className="currently_icons">{data.timeIcon}</p>
-                    <p className="current_desc">{data.time}</p>
+                    <span className="current_desc">{data.time}</span>
                   </div>
                 </div>
               </div>
