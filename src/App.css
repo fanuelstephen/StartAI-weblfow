@@ -4735,7 +4735,91 @@ button {
     transition: 1s;
   }
 }
+@media screen and (max-width: 430px) {
+  /* hide navigation */
+  .hide {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    padding: 28px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(-170vh);
+    transition: 1s;
+  }
+  header {
+    position: relative;
+    /* overflow: hidden; */
+  }
+  /* menu */
+  .show {
+    position: absolute;
+    top: 84%;
+    left: 0;
+    font-size: 20px;
+    padding: 28px;
+    padding-top: 16px;
+    height: 100vh;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 888;
+    transform: translateY(1vh);
+    transition: 1s;
+  }
+}
 
+@media screen and (max-width: 414px) {
+  /* hide navigation */
+  .hide {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    padding: 28px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(-170vh);
+    transition: 1s;
+  }
+  header {
+    position: relative;
+    /* overflow: hidden; */
+  }
+  /* menu */
+  .show {
+    position: absolute;
+    top: 84%;
+    left: 0;
+    font-size: 20px;
+    padding: 28px;
+    padding-top: 16px;
+    height: 100vh;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 888;
+    transform: translateY(1vh);
+    transition: 1s;
+  }
+}
 @media screen and (max-width: 375px) {
   .link_box {
     display: none;
@@ -5581,7 +5665,7 @@ button {
   /* menu */
   .show {
     position: absolute;
-    top: 16%;
+    top: 81%;
     left: 0;
     font-size: 20px;
     padding: 28px;
