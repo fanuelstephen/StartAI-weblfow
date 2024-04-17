@@ -5,7 +5,7 @@ import { MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Heading = ({ handleMenu, openMenu }) => {
-  const [showHidden, setShowHidden] = useState("false");
+  const [showHidden, setShowHidden] = useState(false);
 
   const handleIconHover = () => {
     setShowHidden(true);
