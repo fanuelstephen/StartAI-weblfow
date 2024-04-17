@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Heading from "../pages/home/Heading";
+import { FaArrowRight } from "react-icons/fa";
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -36,6 +37,23 @@ function Header() {
             <Link to="contact-us" onClick={closeMenu}>
               Contact
             </Link>
+
+            <div className="login_accounts">
+              <Link to="sign-in">Sign In</Link>
+              <Link to="sign-up">Sign Up</Link>
+              <div className="bookdemo_btn">
+                <Link
+                  to="BookDemo"
+                  className="bookdemo_btn"
+                  onClick={closeMenu}
+                >
+                  Book a Demo
+                  <span>
+                    <FaArrowRight className="bookmode_icon" />
+                  </span>
+                </Link>
+              </div>
+            </div>
           </nav>
         </div>
         <Heading openMenu={openMenu} handleMenu={handleMenu} />

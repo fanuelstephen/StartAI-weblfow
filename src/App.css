@@ -58,21 +58,7 @@ button {
   color: red;
   text-decoration: underline;
 }
-.hide ul {
-  display: flex;
-  align-items: center;
-}
-.hide ul li a {
-  font-size: 16px;
-  padding: 24px 11.2px;
-  color: #222;
-  font-weight: 500;
-  transition: 0.5s ease;
-  cursor: pointer;
-}
-.hide ul li a:hover {
-  color: #6e45e9;
-}
+
 #btn {
   background-color: #222;
   font-weight: bold;
@@ -90,10 +76,9 @@ button {
   display: flex;
   align-items: center;
   gap: 35px;
+  height: 0;
 }
 .header-content a {
-  /* font-size: 16px; */
-  /* padding: 24px 11.2px; */
   color: #222;
   font-weight: 500;
 }
@@ -119,7 +104,6 @@ button {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: all 0.5s ease-in;
 }
-
 .navigation-right {
   display: flex;
   align-items: center;
@@ -148,14 +132,12 @@ button {
 }
 
 /*  ******************************** HOME STYLE */
-
 .home {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 19px;
 }
-
 .home_content h2 {
   font-size: 3.5rem;
   font-weight: 300;
@@ -227,7 +209,6 @@ button {
   cursor: pointer;
   color: #000;
 }
-
 .home_img img {
   width: 645px;
   height: 536px;
@@ -242,7 +223,6 @@ button {
   margin: 7rem 0;
   padding: 0px 72px;
 }
-
 .demo_logos {
   display: flex;
   align-items: center;
@@ -321,11 +301,9 @@ button {
 .integer-content h5 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(#000 40%, #6b6b6b 72%, #dfdfdf);
   -webkit-background-clip: text;
-
   background-clip: text;
   font-family: Poppins, sans-serif;
   font-weight: 300;
@@ -363,11 +341,11 @@ button {
   align-items: center;
   column-gap: 9px;
 }
-
 .minimize_content img {
   width: 431px;
   height: 409px;
 }
+
 /*  - REUSBLE CODE IN MINIMIZE / BUSINESS / CLIENT - */
 .markIcon {
   width: 33px;
@@ -451,6 +429,7 @@ button {
   width: 456px;
   height: 443px;
 }
+
 /* =================-CLIENT-SECTION / - ============= */
 .client_content {
   display: grid;
@@ -592,7 +571,6 @@ button {
   font-size: 48px;
   line-height: 1.2;
   text-align: center;
-  /* background-image: linear-gradient(#fff, #d6d6d6 63%, #797979); */
   color: #fff;
 }
 .support_content p {
@@ -656,22 +634,7 @@ button {
 .socialIcon {
   font-size: 20px;
 }
-/* right side of the footer */
-/* .footer-links {
-  display: flex;
-  gap: 1rem;
-}
-.footer-links ul {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  margin-left: 20px;
-}
-.footer-links li a {
-  font-size: 17px;
-  color: #000;
-  line-height: 2.5;
-} */
+
 /* rigth side way in other way styling */
 .footer_item_links {
   display: grid;
@@ -774,15 +737,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-.hide {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.hide a {
-  cursor: pointer;
-  font-style: 20px;
-}
+
 /**************** media querise **********************/
 @media screen and (min-width: 1024px) {
   /* ========================>BOOK DEMO */
@@ -983,7 +938,6 @@ button {
   /* ****************************>end sign In / sign Out END ACCOUNT */
   .header {
     padding: 23px 50px;
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1023,12 +977,12 @@ button {
     width: 974px;
     height: 586px;
   }
+
   /* END feature editing part */
   .home {
     margin-top: 93px;
     padding: 0 50px;
   }
-
   .home_img img {
     width: 503px;
     height: 492px;
@@ -1718,9 +1672,32 @@ button {
   .analytic_card-content-details p {
     font-size: 14px;
   }
+  .login_accounts {
+    display: none;
+  }
   /* +=======================> END-->BLOG   */
 }
 @media screen and (max-width: 992px) {
+  .login_accounts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .bookdemo_btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 9px 0;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+  .bookmode_icon {
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+
   /* ========================>BOOK DEMO */
   .demo_logos {
     margin-bottom: 4rem;
@@ -2621,6 +2598,7 @@ button {
     width: 938px;
     height: 586px;
   }
+
   /* END feature editing part */
   .home {
     margin-top: 93px;
@@ -2640,7 +2618,6 @@ button {
   .real_time {
     display: none;
   }
-
   #btn {
     display: none;
   }
@@ -2648,11 +2625,9 @@ button {
     width: 100%;
     background-color: black;
   }
-
   .customer_icon {
     display: none;
   }
-
   /* ---------------------------------home media queries */
   .home {
     grid-template-columns: 1fr;
@@ -2740,34 +2715,41 @@ button {
     display: block;
     color: #fff;
   }
+  /* hide navigation */
   .hide {
-    transform: translateY(-468px);
-    transition: all 0.3s ease-out;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(-170vh);
+    transition: 1s;
   }
+
   /* menu */
   .show {
     position: absolute;
     top: 16%;
     left: 0;
     font-size: 20px;
-    padding-left: 28px;
+    padding: 28px;
     padding-top: 16px;
+    height: 100vh;
     width: 100%;
-    height: 25rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     background-color: #fff;
-    transition: top 0.3s ease; /**/
     display: flex;
     flex-direction: column;
     gap: 20px;
-    color: #fff;
-    z-index: 1;
-    color: #222;
-    font-weight: 600;
-
-    transform: translate(0px);
-    transition: all 0.3s ease-out;
+    z-index: 100000;
+    transform: translateY(1vh);
+    transition: 1s;
   }
 }
 
@@ -3745,9 +3727,45 @@ button {
   .nav_menu {
     display: block;
     color: #fff;
+    overflow: hidden;
   }
+
+  /* hide navigation */
   .hide {
-    display: none;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    padding: 28px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(-170vh);
+    transition: 1s;
+  }
+
+  /* menu */
+  .show {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    font-size: 20px;
+    padding: 28px;
+    padding-top: 16px;
+    height: 100vh;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 100000;
+    transform: translateY(1vh);
+    transition: 1s;
   }
 }
 @media screen and (max-width: 479px) {
@@ -4679,8 +4697,42 @@ button {
     display: block;
     color: #fff;
   }
+  /* hide navigation */
   .hide {
-    display: none;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    padding: 28px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(-170vh);
+    transition: 1s;
+  }
+
+  /* menu */
+  .show {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    font-size: 20px;
+    padding: 28px;
+    padding-top: 16px;
+    height: 100vh;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 100000;
+    transform: translateY(1vh);
+    transition: 1s;
   }
 }
 
@@ -5508,23 +5560,48 @@ button {
     height: 261px;
   }
   /* END feature editing part */
+
+  /* hide navigation */
+  .hide {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    padding: 28px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(-170vh);
+    transition: 1s;
+  }
+
+  /* menu */
   .show {
     position: absolute;
-    top: 10%;
+    top: 16%;
     left: 0;
     font-size: 20px;
-    padding-left: 20px;
+    padding: 28px;
     padding-top: 16px;
+    height: 100vh;
     width: 100%;
-    height: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 100000;
+    transform: translateY(1vh);
+    transition: 1s;
   }
+
   .nav_menu {
     display: block;
     color: #fff;
-  }
-  .hide {
-    display: none;
   }
   .demo_section {
     padding: 0 17px;

@@ -85,7 +85,7 @@ const Heading = ({ handleMenu, openMenu }) => {
         ref={overlay}
         onClick={handleOverlay}
       ></div>
-      {/* temporar */}
+      {/* sign upand sighn in accout */}
       <div
         className={`link_box  ${showHidden ? "" : "hidden"}`}
         onMouseEnter={handleLinkBoxHover}
