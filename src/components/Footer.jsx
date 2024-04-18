@@ -6,6 +6,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { AiFillFire } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -39,20 +40,20 @@ const Footer = () => {
             <ul className="footer_item_links">
               <div>
                 <li className="links-footer">
-                  <a href="/">About us</a>
-                  <a href="/">Book a demo</a>
-                  <a href="/">Blog</a>
-                  <a href="/">Pricing</a>
-                  <a href="/">Contact</a>
+                  <Link to="about-us">About us</Link>
+                  <Link to="/BookDemo">Book a demo</Link>
+                  <Link to="blog">Blog</Link>
+                  <Link to="pricing">Pricing</Link>
+                  <Link to="contact-us">Contact</Link>
                 </li>
               </div>
 
               <div>
                 <li className="links-footer">
-                  <a href="/">Features</a>
-                  <a href="/">Sign In</a>
-                  <a href="/">Sign Up</a>
-                  <a href="/">Forgot Password</a>
+                  <Link to="feature">Features</Link>
+                  <Link to="/sign-in">Sign In</Link>
+                  <Link to="/sign-up">Sign Up</Link>
+                  <Link to="/forgot-password">Forgot Password</Link>
                 </li>
               </div>
 

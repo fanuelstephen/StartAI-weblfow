@@ -11,9 +11,9 @@ const Card = ({ ResourcesCard }) => {
           <p>{ResourcesCard.desc}</p>
         </div>
 
-        <div className="auther">
+        <div className="author">
           <img src={ResourcesCard.img} alt="" />
-          <div className="auather-content">
+          <div className="author-content">
             <span>{ResourcesCard.authorName}</span>
             <div className="date">
               <div>{ResourcesCard.date}</div>

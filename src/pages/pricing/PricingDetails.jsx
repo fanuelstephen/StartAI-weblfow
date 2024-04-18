@@ -51,6 +51,7 @@ function PricingDetails() {
                 </h3>
               </div>
               <button className="card_btn">{data.btn}</button>
+
               <div>
                 <p className="card_description-2">{data.desc}</p>
                 <div className="card_list">

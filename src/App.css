@@ -249,7 +249,6 @@ button {
   left: 0;
   width: 758px;
   object-fit: cover;
-  /* height: 486px; */
   height: fit-content;
 
   border-radius: 25px;
@@ -536,16 +535,16 @@ button {
   height: 49px;
   overflow: hidden;
 }
-.auther {
+.author {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
 }
-.auather-content {
+.author-content {
   display: flex;
   flex-direction: column;
 }
-.auather-content span {
+.author-content span {
   font-size: 14px;
 }
 .date {
@@ -553,7 +552,7 @@ button {
   align-items: center;
   gap: 7px;
 }
-.auther img {
+.author img {
   width: 3rem;
   height: 3rem;
   margin-right: 1rem;
@@ -742,12 +741,34 @@ button {
 .hide {
   display: flex;
   gap: 1rem;
+  transition: all 0.3s ease-in;
 }
+.hide a:hover {
+  color: #421abb;
+}
+
 .Log_in-btn {
   color: #000;
 }
 .sign_in_btn span {
   color: black;
+}
+.card_btn {
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+.card_btn:hover {
+  background-color: #6e45e9;
+  color: #fff;
+}
+.Basic_btn:hover,
+.efficient_btn:hover,
+.team_btn:hover {
+  background-color: #6e45e9;
+  color: #fff;
+}
+.customer_icon {
+  background-color: #dcdcdc;
 }
 
 /**************** media querise **********************/
@@ -1080,8 +1101,9 @@ button {
   .card_btn {
     border: 1px solid #000;
     font-size: 15px;
-    border-radius: 10px;
+    border-radius: 35px;
     padding: 0.75rem 1.5rem;
+    background-color: #fff;
     font-family: Poppins, sans-serif;
     font-weight: 500;
     transition: background-color 0.25s;
@@ -1169,11 +1191,10 @@ button {
     font-size: 1rem;
     background-color: transparent;
     border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
   }
-  .efficient_btn {
-    background-color: #6e45e9;
-    color: #fff;
-  }
+
   /* ===>coreFeature */
   .CF_heading {
     margin-bottom: 60px;
@@ -1691,9 +1712,7 @@ button {
   }
   /* +=======================> END-->BLOG   */
 }
-button {
-  color: black;
-}
+
 @media screen and (max-width: 992px) {
   .login_accounts {
     display: flex;
@@ -1993,7 +2012,8 @@ button {
   .card_btn {
     border: 1px solid #000;
     font-size: 15px;
-    border-radius: 10px;
+    border-radius: 35px;
+    background-color: #fff;
     padding: 0.75rem 1.5rem;
     font-family: Poppins, sans-serif;
     font-weight: 500;
@@ -2768,9 +2788,6 @@ button {
     transform: translateY(1vh);
     transition: 1s;
   }
-  button {
-    color: black;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3052,7 +3069,8 @@ button {
   .card_btn {
     border: 1px solid #000;
     font-size: 15px;
-    border-radius: 10px;
+    border-radius: 35px;
+    background-color: #fff;
     padding: 0.75rem 1.5rem;
     font-family: Poppins, sans-serif;
     font-weight: 500;
@@ -3787,14 +3805,8 @@ button {
     transform: translateY(1vh);
     transition: 1s;
   }
-  button {
-    color: black;
-  }
 }
 @media screen and (max-width: 479px) {
-  button {
-    color: black;
-  }
   /* ========================>BOOK DEMO */
   .demo_logos {
     margin-bottom: 4rem;
@@ -3963,8 +3975,9 @@ button {
   .card_btn {
     border: 1px solid #000;
     font-size: 15px;
-    border-radius: 10px;
+    border-radius: 35px;
     padding: 0.75rem 1.5rem;
+    background-color: #fff;
     font-family: Poppins, sans-serif;
     font-weight: 500;
     transition: background-color 0.25s;
@@ -4762,9 +4775,6 @@ button {
   }
 }
 @media screen and (max-width: 430px) {
-  button {
-    color: black;
-  }
   .signIn_img img {
     width: 395px;
     border-radius: 20px;
@@ -4812,9 +4822,6 @@ button {
 }
 
 @media screen and (max-width: 414px) {
-  button {
-    color: black;
-  }
   /* hide navigation */
   .hide {
     position: absolute;
@@ -4857,9 +4864,6 @@ button {
   }
 }
 @media screen and (max-width: 375px) {
-  button {
-    color: black;
-  }
   .link_box {
     display: none;
   }
@@ -5482,8 +5486,9 @@ button {
   .card_btn {
     border: 1px solid #000;
     font-size: 15px;
-    border-radius: 10px;
+    border-radius: 35px;
     padding: 0.75rem 1.5rem;
+    background-color: #fff;
     font-family: Poppins, sans-serif;
     font-weight: 500;
     transition: background-color 0.25s;
@@ -5735,10 +5740,7 @@ button {
   .home-btn-container {
     display: flex;
   }
-  button {
-    padding: 10px 24px;
-    border-radius: 30px;
-  }
+
   .btn1 {
     font-size: 13px;
   }
