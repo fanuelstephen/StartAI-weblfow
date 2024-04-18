@@ -19,6 +19,8 @@ body {
 button {
   padding: 14px 24px;
   border-radius: 30px;
+  color: black;
+  font-size: 17px;
 }
 .grid {
   display: grid;
@@ -93,7 +95,7 @@ button {
 /* LINK BOX */
 .link_box {
   position: absolute;
-  top: 83%;
+  top: 9%;
   left: 91%;
   display: flex;
   flex-direction: column;
@@ -737,8 +739,24 @@ button {
   align-items: center;
   justify-content: center;
 }
+.hide {
+  display: flex;
+  gap: 1rem;
+}
+.Log_in-btn {
+  color: #000;
+}
+.sign_in_btn span {
+  color: black;
+}
 
 /**************** media querise **********************/
+@media screen and (min-width: 1024px) {
+  .home_img img {
+    width: 566px;
+    height: 460px;
+  }
+}
 @media screen and (min-width: 1024px) {
   /* ========================>BOOK DEMO */
   .spendless_container {
@@ -984,14 +1002,10 @@ button {
     padding: 0 50px;
   }
   .home_img img {
-    width: 503px;
-    height: 492px;
+    width: 450px;
+    height: 364px;
   }
   /* +================>PRICING DETAILS */
-  /* .link_box {
-    display: none;
-  } */
-
   .pd_container {
     padding: 20px 20px;
   }
@@ -1676,6 +1690,9 @@ button {
     display: none;
   }
   /* +=======================> END-->BLOG   */
+}
+button {
+  color: black;
 }
 @media screen and (max-width: 992px) {
   .login_accounts {
@@ -2751,6 +2768,9 @@ button {
     transform: translateY(1vh);
     transition: 1s;
   }
+  button {
+    color: black;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3767,8 +3787,14 @@ button {
     transform: translateY(1vh);
     transition: 1s;
   }
+  button {
+    color: black;
+  }
 }
 @media screen and (max-width: 479px) {
+  button {
+    color: black;
+  }
   /* ========================>BOOK DEMO */
   .demo_logos {
     margin-bottom: 4rem;
@@ -4736,6 +4762,13 @@ button {
   }
 }
 @media screen and (max-width: 430px) {
+  button {
+    color: black;
+  }
+  .signIn_img img {
+    width: 395px;
+    border-radius: 20px;
+  }
   /* hide navigation */
   .hide {
     position: absolute;
@@ -4779,6 +4812,9 @@ button {
 }
 
 @media screen and (max-width: 414px) {
+  button {
+    color: black;
+  }
   /* hide navigation */
   .hide {
     position: absolute;
@@ -4821,6 +4857,9 @@ button {
   }
 }
 @media screen and (max-width: 375px) {
+  button {
+    color: black;
+  }
   .link_box {
     display: none;
   }
